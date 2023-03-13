@@ -15,15 +15,16 @@ html {
     box-sizing: border-box;
 }
 body {
-    background-color: #c0e1f3;
+    background-color: rgb(222, 245, 204);
     font-size: 1.6rem; /*1rem= 10px */
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;;
 }
 h1{
     font-size: 3.8rem;
 }
 h2{
     font-size: 2.8rem;
+    color: var(--primario);
 }
 h3{
     font-size: 2.4rem;
@@ -34,7 +35,7 @@ h1,h2,h3{
 .titulo{
     text-align: center;
     font-size: 3.8rem;
-    color:slateblue;
+    color:var(--primario)
 }
 .titulo span{
     font-size: 2rem;
@@ -80,7 +81,7 @@ h1,h2,h3{
     }
 }
 .imagen_inicio{
-    background-image: url("../img/imagen\ inicio.jpeg");
+    background-image: url("../img/imagen_ancla.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 45rem;
@@ -174,51 +175,26 @@ h1,h2,h3{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.forms{
-    background-color: var(--grisclaro);
-    width: min(60rem,100%);
-    margin: 0 auto;
-    padding: 2rem;
-    border-radius: 1rem;
-}
-.forms fieldset{
-    border: none;
-}
-.forms fieldset legend{
-    margin: 0 auto;
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 3rem;
-    color: var(--primario);
-}
-.campo{
-    margin-bottom: 1rem;
-}
-.campo label{
-    font-weight: bold;
-    margin-bottom: .5rem;
-    display: block;
-}
-.input_text{
+}div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
     width: 100%;
-    border: none;
-    padding: 1.5rem;
-}
-@media(min-width: 768px){
-    .btn_from{
-        justify-content: flex-end;
-    }
-    .btn_from .btn_contact{
-        width: auto;
-    }
-}
-.btn_from{
-    display: flex;
-    justify-content: center;
-}
-footer{
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
     text-align: center;
+  }
+.colortexto{
+    color: var(--blamco);
 }
-
